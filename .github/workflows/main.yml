@@ -1,8 +1,9 @@
 name: Run my python
 
 on: 
-  push: # do this every push
-
+  #push: # do this every push
+  schedule:
+  - cron: "0 9 * * *"
 jobs:
   build:
     name: Set up environment
